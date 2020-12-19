@@ -1,0 +1,83 @@
+<html>
+<head>
+<title>Сайт-візитка</title>
+<link href="style.css" rel="stylesheet">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+ 
+$(window).scroll(function(){
+if ($(this).scrollTop() > 100) {
+$('.scrollup').fadeIn();
+} else {
+$('.scrollup').fadeOut();
+}
+});
+ 
+$('.scrollup').click(function(){
+$("html, body").animate({ scrollTop: 0 }, 600);
+return false;
+});
+ 
+});
+</script>
+</head>
+<body bgcolor="000000">
+<div align="right">
+<nav>
+<ul class="menu">
+    <li><a href="Про нас.html">Про нас</a>
+    </li>
+    <li><a href="Проекти.html">Проекти</a>
+        <ul class="submenu">
+            <li><a href="Проекти.html#top1">«Здорова дитина  - здорова нація»</a></li>
+            <li><a href="#top2">«Інтерактивна книга»</a></li>
+            <li><a href="#top3">«Літературна мозаїка»</a></li>
+        </ul>
+    </li>
+</ul>
+</nav>
+</div>
+<div>
+<nav class="nav">
+</nav>
+</div>
+<div align="center">
+<div class="div">
+<div>
+<nav>
+</nav>
+</div>
+<a name="top1"><p class="shadowtext">Проект «Здорова дитина  - здорова нація»</p></a>
+<a href="проект/Звіт-проекту.jpg" class="a1"><p align="left" class="p">Звіт проекту</p></a>
+<video width="900" height="600"  controls>
+<source src = "проект/Мой фильм+.mp4">
+</video> 
+<a name="top2">
+<p class="shadowtext">Проект «Інтерактивна книга»</p></a>
+<div class="contrast pic">
+<a href="книга/книга.html">
+<img src="книга/maxresdefault.jpg" width="900" height="600" align="center">
+</a>
+</div>
+<a name="top3"><p class="shadowtext">Проект «Літературна мозаїка»</p></a>
+<iframe src="літ мозаїка/Shablon1.pdf" width="900" height="1100" align="center"></iframe>
+<div>
+<nav class="nav">
+</nav>
+</div>
+<div class="clearfloat"></div>
+</div>
+<footer>
+        <p class="copyright">
+            Copyright &copy; 
+			<a href="http://gimnasium1.in.ua" class="a2">Гадяцької гімназії імені Олени Пчілки</a> 
+			| Designed by 
+			<a href="https://vk.com/id307692482" class="a2">Vlasenko M.</a>|
+			<a href="https://vk.com/mfesenko2000" class="a2">Fesenko M.</a>|
+			<a href="https://vk.com/iddashakotlyk" class="a2">Kotlyk D.</a>
+        </p>
+    </footer>
+	<a href="#" class="scrollup">Наверх</a>
+</div>
+</html>

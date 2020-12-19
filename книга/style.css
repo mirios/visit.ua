@@ -1,0 +1,17 @@
+body{
+		background-image: url(maxresdefault.jpg) ;
+  background-size: cover;*/
+}
+a { 
+    text-decoration: none; /* Отменяем подчеркивание у ссылки */
+    color: #ff0000;
+   } 
+   a:hover {
+    text-decoration: underline; 
+   }
+p,h2{
+	margin-left:20px;
+}
+
+
+   
